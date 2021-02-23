@@ -1,0 +1,194 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    font-family: 'Roboto', sans-serif;
+}
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+
+body{
+    font-size: 62.5%
+}
+
+section{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    padding-top: 25px;
+    padding-bottom: 1px;
+    width: 80%;
+    outline: solid;
+    outline-width: 1px;
+    outline-color: rgb(230,230,230);
+    background-color: rgb(240,240,240);
+}
+
+footer{
+    font-size: 11px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 80%;
+    height: 40px;
+    outline: solid;
+    outline-width: 1px;
+    outline-color: rgb(230,230,230);
+    text-align: center;
+}
+
+article{
+    padding-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:50px;
+    text-align: center;
+    width: 80%;
+    outline: solid;
+    outline-width: 1px;
+    outline-color: rgb(230,230,230);
+    padding-bottom: 15px;
+}
+
+
+header h1{
+    width: 100%;
+    min-width: 200px;
+    height: 110px;
+}
+
+header h1 a{
+    margin: 0 auto;
+    display: block;
+    height: 110px;
+    margin: 0px;
+    text-indent: -999em;
+    background: URL("./pictures/skarzyskologo.png")  no-repeat center;
+    background-size: contain;
+}
+
+.learnMoreButton{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding-top: 20px;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    background-color: rgb(0,159,227);
+    color: black !important;
+    width: 300px;
+    height: 40px;
+    border-radius: 7px;
+}
+
+.learnMoreButton:hover{ background-color: rgb(219, 26, 33); }
+
+.nav{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.accommodation{
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    width: 300px;
+    height: 50px;
+    background-color: blue;
+    text-decoration: none;
+    font-size: 30px;
+    padding-top: 12px;
+    border-radius: 7px;
+}
+
+.nav ul{
+    display: flex;
+    list-style: none;
+    text-align: fixed;
+    color: rgb(0,159,227);
+}
+
+.nav li{ flex: 1; }
+
+.nav ul li{ height: 50px; }
+
+a:visited{ color: rgb(0,159,227); }
+
+.nav a{
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    padding: 20px;
+    transition: background .1s;
+}
+
+.nav a:hover{ background-color: rgb(244,206,18); }
+
+#historyLearnMore{
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#menuTrigger{
+    display: none;
+    position: relative;
+    left: 10%;
+    top: 70px;
+    z-index: 1;
+    height: 40px;
+    width: 40px;
+    font-size: 30px;
+    background-color: rgb(219, 26, 33) !important;
+    color: white;
+    border: none;
+    text-align: center;
+    border-radius: 7px;
+}
+
+@media screen and (max-width: 900px){
+
+    iframe{
+        width: 99%;
+    }
+
+    section{
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    footer{
+        width: 97%;
+        text-align: center;
+    }
+
+    article{
+        width: 96%;
+        margin-bottom: 10px;
+    }
+
+    img{
+        width:94%;
+        height: auto;
+    }
+
+    .nav{ display: none; }
+
+    .nav ul{ flex-direction: column; }
+
+    .nav ul li{ height: 25px;}
+   
+    .learnMoreButton{
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    #menuTrigger{ display: block; }
+}

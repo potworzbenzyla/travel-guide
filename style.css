@@ -97,6 +97,7 @@ header h1 a{
     display: block;
     width: 300px;
     height: 50px;
+    color: white !important;
     background-color: blue;
     text-decoration: none;
     font-size: 30px;
@@ -149,7 +150,7 @@ a:visited{ color: rgb(0,159,227); }
     border-radius: 7px;
 }
 
-@media screen and (max-width: 900px){
+@media handheld, screen and (max-width: 900px){
 
     iframe{
         width: 99%;
@@ -164,12 +165,12 @@ a:visited{ color: rgb(0,159,227); }
     }
 
     footer{
-        width: 97%;
+        width: 99%;
         text-align: center;
     }
 
     article{
-        width: 96%;
+        width: 99%;
         margin-bottom: 10px;
     }
 
